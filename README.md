@@ -25,4 +25,8 @@ https://unix.stackexchange.com/questions/279760/how-can-we-use-multiple-variable
 https://stackoverflow.com/questions/638975/how-do-i-tell-if-a-file-does-not-exist-in-bash
 https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124
 https://askubuntu.com/questions/992336/how-to-extract-certain-data-from-a-line
+
+# Python Scraping
+https://python-adv-web-apps.readthedocs.io/en/latest/scraping.html
+https://www.scrapingbee.com/blog/selenium-python/
 ```
