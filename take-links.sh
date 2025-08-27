@@ -2,6 +2,7 @@
 # take-links.sh takes the links of es.famousbirthdays.com/
 
 months=(january february march april may june july august september october november december)
+###########################################
 TEMP_FILE=temp_month_file
 LINKS_FILE=links_file
 
@@ -123,5 +124,8 @@ if [ -f $ALL_LINKS_PEOPLE ]; then
 	rm -rf $ALL_LINKS_PEOPLE;
 fi
 
-echo -e $GREEN"ALL LINKS SAVED, FILENAME:"$BLUE $ALL_LINKS_PEOPLE_FILTERED $RESET
+FOLDAR_NAME=data
+mkdir $FOLDAR_NAME
+mv $ALL_LINKS_PEOPLE_FILTERED $FOLDAR_NAME
+echo -e $GREEN"ALL LINKS SAVED, FILENAME:"$BLUE $FOLDAR_NAME/$ALL_LINKS_PEOPLE_FILTERED $RESET
 #xargs -n 1 curl -O < "$ALL_LINKS_PEOPLE_FILTERED"
