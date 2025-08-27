@@ -21,7 +21,6 @@ BLUE="\e[0;34m"
 #january2.html
 ############################################
 
-
 if [ -f $TEMP_FILE ]; then
 	echo -e $YELLOW"skipping $TEMP_FILE, file exists" $RESET
 else
@@ -29,7 +28,8 @@ else
 	echo -e $GREEN"creating a file with the months and days" $RESET
 	for i in "${months[@]}"
 	do
-		for j in {1..2};
+		for j in {1..2}
+		#for j in {1..31}
 		do
 			echo -n $i >> $TEMP_FILE;
 			echo $j ".html" | tr -d ' ' >> $TEMP_FILE;
@@ -120,7 +120,7 @@ fi
 ############################################
 
 if [ -f $ALL_LINKS_PEOPLE ]; then
-	echo -e $GREEN"removing $ALL_LINKS_PEOPLE"
+	echo -e $GREEN"removing $ALL_LINKS_PEOPLE"$RESET
 	rm -rf $ALL_LINKS_PEOPLE;
 fi
 
@@ -128,4 +128,6 @@ FOLDAR_NAME=data
 mkdir $FOLDAR_NAME
 mv $ALL_LINKS_PEOPLE_FILTERED $FOLDAR_NAME
 echo -e $GREEN"ALL LINKS SAVED, FILENAME:"$BLUE $FOLDAR_NAME/$ALL_LINKS_PEOPLE_FILTERED $RESET
+
+echo -e $YELLOW$(cat $FOLDAR_NAME/$ALL_LINKS_PEOPLE_FILTERED | wc -l) "links."$RESET
 #xargs -n 1 curl -O < "$ALL_LINKS_PEOPLE_FILTERED"
