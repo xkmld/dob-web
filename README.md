@@ -1,5 +1,20 @@
 # Date of Birth Web
-
+## Scaping
+### Take links
+Using the `take-links.sh` script. You can change how many days yo want in the `for j in ...`
+```bash
+	for i in "${months[@]}"
+	do
+		for j in {1..2}
+		#for j in {1..31}
+		do
+			echo -n $i >> $TEMP_FILE;
+			echo $j ".html" | tr -d ' ' >> $TEMP_FILE;
+		done;
+	done;
+```
+### Scraping info
+With the file `data/links_to_scrape.txt` now is python time.
 ## Useful data
 ```bash
 # For script
