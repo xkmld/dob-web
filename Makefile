@@ -1,4 +1,5 @@
 SCRIPTS_FOLDER=utils/scripts/
+SCRAPER_FOLDER=utils/scraper/
 
 .DEFAULT_GOAL := help
 
@@ -8,10 +9,13 @@ links:
 venv:
 	/bin/bash "$(SCRIPTS_FOLDER)/create-venv.sh"
 
-scrape:
+scrape: requirements
 	echo "Not yet"
+
+requirements:
+	pip install -r $(SCRAPER_FOLDER)/requirements.txt
 
 help:
 	echo "COMMANDS: links, venv, scrape"
 
-.PHONY: links venv scrape help
+.PHONY: links venv scrape help requirements
