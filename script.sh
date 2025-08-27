@@ -24,7 +24,8 @@ else
 	echo -e $GREEN"creating a file with the months and days" $RESET
 	for i in "${months[@]}"
 	do
-		for j in {1..31};
+	#	for j in {1..31};
+		for j in {1..2};
 		do
 			echo -n $i >> $TEMP_FILE
 			echo $j ".html" | tr -d ' ' >> $TEMP_FILE
@@ -98,7 +99,16 @@ else
 	do
 		echo $LINE | tr -d '\t' | awk '{print $3}' | awk -F "\"" '{print $2}' >> $ALL_LINKS_PEOPLE_FILTERED
 		echo "copied: $LINE"
-		sleep 5
 	done < "$ALL_LINKS_PEOPLE"
 fi
 
+'
+Now, i have all the links
+LIKE THIS:
+https://es.famousbirthdays.com/people/morris-chestnut.html
+https://es.famousbirthdays.com/people/ali-siadat.html
+https://es.famousbirthdays.com/people/frank-langella.html
+https://es.famousbirthdays.com/people/paolo-guerrero.html
+'
+
+xargs -n 1 curl -O < "$ALL_LINKS_PEOPLE_FILTERED"
