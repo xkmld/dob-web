@@ -2,3 +2,6 @@
 venv/
 *.~
 chromedriver
+links_file
+temp_month_file
+links_href_grep
