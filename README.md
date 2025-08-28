@@ -27,6 +27,15 @@ https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124
 https://askubuntu.com/questions/992336/how-to-extract-certain-data-from-a-line
 
 # Python Scraping
-https://python-adv-web-apps.readthedocs.io/en/latest/scraping.html
-https://www.scrapingbee.com/blog/selenium-python/
+https://j2logo.com/python/web-scraping-con-python-guia-inicio-beautifulsoup/
+https://realpython.com/beautiful-soup-web-scraper-python/#find-elements-by-class-name-and-text-content
+https://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list
+https://blog.finxter.com/5-best-ways-to-convert-html-strings-to-plain-text-in-python/
+https://www.digitalocean.com/community/tutorials/python-remove-spaces-from-string
+https://www.geeksforgeeks.org/python/python-removing-newline-character-from-string/
+https://www.geeksforgeeks.org/python/python-remove-unwanted-spaces-from-string/
+https://stackoverflow.com/questions/11505318/meaning-of-i-in-vim-and-how-to-not-show-them
+https://stackoverflow.com/questions/31565609/python-while-loop-condition-check-for-string
+https://stackoverflow.com/questions/2077897/substitute-multiple-whitespace-with-single-whitespace-in-python
+https://www.digitalocean.com/community/tutorials/how-to-construct-while-loops-in-python-3
 ```
