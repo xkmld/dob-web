@@ -11,10 +11,11 @@ venv:
 	/bin/bash "$(SCRIPTS_FOLDER)/create-venv.sh"
 
 requirements:
-	pip install -r $(SCRAPER_FOLDER)/requirements.txt
+	pip install -r $(SCRAPER_FOLDER)/requirements.txt > logs
+	rm logs
 
 scrape: requirements
-	echo "Not yet"
+	python3 utils/scraper/scrape.py
 
 help:
 	echo "COMMANDS: links, venv, requirements, scrape"
