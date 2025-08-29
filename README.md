@@ -54,4 +54,22 @@ https://stackoverflow.com/questions/273192/how-do-i-create-a-directory-and-any-m
 https://www.askpython.com/python/examples/get-month-name-from-number
 https://www.w3schools.com/python/python_functions.asp
 https://stackoverflow.com/questions/59812779/for-loop-string-line-by-line-not-letter-by-letter
+
+# SQL
+https://www.geeksforgeeks.org/sql/sql-create-database/
+https://www.w3schools.com/sql/sql_create_db.asp
+
+# Postgres
+https://shape.host/resources/como-instalar-postgresql-en-debian-12
+https://www.postgresql.org/download/linux/debian/
+https://wiki.debian.org/es/PostgreSql
+```
+
+## Execution Order
+```bash
+Before: Install psql, install python3...
+
+- Environment creation: make venv (and run the commands printed: source venv/bin/activate...)
+- Take links: make links
+- Scrape links: make scrape
 ```

@@ -1,2 +1,1 @@
-try to scrape with beautiulsoup
-https://j2logo.com/python/web-scraping-con-python-guia-inicio-beautifulsoup/
+add the scarped data to database
