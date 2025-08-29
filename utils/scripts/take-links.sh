@@ -28,7 +28,8 @@ else
 	echo -e $GREEN"creating a file with the months and days" $RESET
 	for i in "${months[@]}"
 	do
-		for j in {1..2}
+		# i scraped from {1..4}
+		for j in {9..14}
 		#for j in {1..31}
 		do
 			echo -n $i >> $TEMP_FILE;
