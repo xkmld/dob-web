@@ -78,8 +78,16 @@ https://unix.stackexchange.com/questions/345814/gcc-error-installing-psycopg2-pa
 https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
 https://dev.to/saint_vandora/resolving-psycopg2errorsinsufficientprivilege-4nl4
 https://packages.ubuntu.com/noble/libpq-dev
-
-
+https://stackoverflow.com/questions/20199126/reading-json-from-a-file
+https://stackoverflow.com/questions/5767325/how-can-i-remove-a-specific-item-from-an-array-in-javascript
+https://stackoverflow.com/questions/30229231/python-save-image-from-url
+https://stackoverflow.com/questions/19235686/psycopg2-insert-into-table-with-placeholders
+https://www.digitalocean.com/community/tutorials/python-string-comparison
+https://stackoverflow.com/questions/69418919/what-is-the-difference-between-connection-commit-and-cursor-executecommit
+https://stackoverflow.com/questions/42767733/inserting-date-into-postgresql-columns-from-and-to
+https://stackoverflow.com/questions/4231491/how-to-insert-null-values-into-postgresql-database-using-python
+https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres
+https://stackoverflow.com/questions/5342440/reset-auto-increment-counter-in-postgres
 ```
 
 ## Add sql to postgres

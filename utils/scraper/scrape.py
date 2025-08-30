@@ -17,6 +17,7 @@ def format_birth_date(the_date):
     the_date = the_date.replace("Octubre", "10")
     the_date = the_date.replace("Noviembre", "11")
     the_date = the_date.replace("Diciembre", "12")
+    the_date = the_date.replace(",", "")
     #print(the_date)
     #print(list(filter(None,the_date.lstrip().split(" "))))
     return list(filter(None,the_date.lstrip().split(" ")))
