@@ -1,5 +1,5 @@
 # Date of Birth Web
-[![Watch the video](https://img.youtube.com/vi/4hnB018iWzg/default.jpg)](https://youtu.be/4hnB018iWzg)
+[![Watch the video](https://img.youtube.com/vi/4hnB018iWzg/hqdefault.jpg)](https://youtu.be/4hnB018iWzg)
 ## Scaping
 ### Take links
 Using the `take-links.sh` script. You can change how many days yo want in the `for j in ...`
