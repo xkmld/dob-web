@@ -20,4 +20,10 @@ scrape: requirements
 help:
 	echo "COMMANDS: links, venv, requirements, scrape"
 
+inserter: requirements
+	python3 utils/inserter/inserter.py
+
+insert: 
+	make inserter
+
 .PHONY: links venv scrape help requirements
