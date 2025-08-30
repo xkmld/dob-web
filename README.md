@@ -1,5 +1,16 @@
 # Date of Birth Web
-[![Watch the video](https://img.youtube.com/vi/4hnB018iWzg/hqdefault.jpg)](https://youtu.be/4hnB018iWzg)
+
+## Execution Order
+```bash
+Before: Install psql, install python3...
+
+- Environment creation: make venv (and run the commands printed: source venv/bin/activate...)
+- Take links: make links
+- Scrape links: make scrape
+    - Scrape images
+- Insert data to database
+```
+
 ## Scaping
 ### Take links
 Using the `take-links.sh` script. You can change how many days yo want in the `for j in ...`
@@ -91,7 +102,7 @@ https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence
 https://stackoverflow.com/questions/5342440/reset-auto-increment-counter-in-postgres
 ```
 
-## Add sql to postgres
+## Add scheme.sql to postgres
 ```
 postgres@debian:~$ psql 
 postgres=# CREATE DATABASE dob_web;
@@ -100,7 +111,6 @@ postgres=#
 \q
 postgres@debian:~$ psql -d dob_web -f scheme.sql     #(first add scheme.sql in /var/lib/postgresql)
 ```
-
 
 ## Permissions
 Some of them are innecesary...
@@ -115,12 +125,5 @@ GRANT ALL PRIVILEGES ON DATABASE dob_web TO dob_user;
 GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE famous TO dob_user;
 ```
 
-## Execution Order
-```bash
-Before: Install psql, install python3...
-
-- Environment creation: make venv (and run the commands printed: source venv/bin/activate...)
-- Take links: make links
-- Scrape links: make scrape
-```
-
+## Youtube Serie
+[![Watch the video](https://img.youtube.com/vi/4hnB018iWzg/hqdefault.jpg)](https://youtu.be/4hnB018iWzg)
