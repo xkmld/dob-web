@@ -70,11 +70,14 @@ https://www.postgresql.org/docs/8.0/sql-createuser.html
 https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
 https://dba.stackexchange.com/questions/33943/granting-access-to-all-tables-for-a-user
 https://commandprompt.com/education/how-to-grant-permissions-on-all-tables-to-a-postgresql-user/
+https://neon.com/postgresql/postgresql-indexes/postgresql-create-index
 
 # Insert data python to postgres
 https://stackoverflow.com/questions/26496388/how-to-connect-python-to-postgresql
 https://unix.stackexchange.com/questions/345814/gcc-error-installing-psycopg2-package-for-python3-on-centos-7-3      # important for (sudo apt install libpq-dev)
+https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
 https://dev.to/saint_vandora/resolving-psycopg2errorsinsufficientprivilege-4nl4
+https://packages.ubuntu.com/noble/libpq-dev
 
 
 ```
