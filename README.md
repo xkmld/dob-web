@@ -63,14 +63,44 @@ https://www.w3schools.com/sql/sql_create_db.asp
 https://shape.host/resources/como-instalar-postgresql-en-debian-12
 https://www.postgresql.org/download/linux/debian/
 https://wiki.debian.org/es/PostgreSql
+https://www.w3resource.com/PostgreSQL/snippets/import-sql-dump-into-postgresql-database.php
+https://stackoverflow.com/questions/51404594/syntax-error-auto-increment
+https://neon.com/postgresql/postgresql-indexes/postgresql-create-index
+https://www.postgresql.org/docs/8.0/sql-createuser.html
+https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database
+https://dba.stackexchange.com/questions/33943/granting-access-to-all-tables-for-a-user
+https://commandprompt.com/education/how-to-grant-permissions-on-all-tables-to-a-postgresql-user/
+
+# Insert data python to postgres
+https://stackoverflow.com/questions/26496388/how-to-connect-python-to-postgresql
+https://unix.stackexchange.com/questions/345814/gcc-error-installing-psycopg2-package-for-python3-on-centos-7-3      # important for (sudo apt install libpq-dev)
+https://dev.to/saint_vandora/resolving-psycopg2errorsinsufficientprivilege-4nl4
+
+
+```
 
 ## Add sql to postgres
+```
 postgres@debian:~$ psql 
 postgres=# CREATE DATABASE dob_web;
 CREATE DATABASE
 postgres=#
 \q
 postgres@debian:~$ psql -d dob_web -f scheme.sql     #(first add scheme.sql in /var/lib/postgresql)
+```
+
+
+## Permissions
+Some of them are innecesary...
+```sql
+CREATE USER dob_user WITH PASSWORD 'dob_pass';
+GRANT ALL PRIVILEGES ON DATABASE dob_web TO dob_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO dob_user;
+GRANT USAGE ON SCHEMA PUBLIC TO dob_user;
+GRANT CONNECT ON DATABASE dob_web TO dob_user;
+GRANT ALL PRIVILEGES ON DATABASE dob_web TO dob_user;
+
+GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE famous TO dob_user;
 ```
 
 ## Execution Order
