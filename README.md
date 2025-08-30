@@ -63,6 +63,14 @@ https://www.w3schools.com/sql/sql_create_db.asp
 https://shape.host/resources/como-instalar-postgresql-en-debian-12
 https://www.postgresql.org/download/linux/debian/
 https://wiki.debian.org/es/PostgreSql
+
+## Add sql to postgres
+postgres@debian:~$ psql 
+postgres=# CREATE DATABASE dob_web;
+CREATE DATABASE
+postgres=#
+\q
+postgres@debian:~$ psql -d dob_web -f scheme.sql     #(first add scheme.sql in /var/lib/postgresql)
 ```
 
 ## Execution Order
@@ -73,3 +81,4 @@ Before: Install psql, install python3...
 - Take links: make links
 - Scrape links: make scrape
 ```
+

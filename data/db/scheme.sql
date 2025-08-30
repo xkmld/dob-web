@@ -1,5 +1,5 @@
-CREATE TABLE famous (
-	id int AUTO_INCREMENT PRIMARY KEY;
+CREATE TABLE IF NOT EXISTS famous (
+	id SERIAL NOT NULL PRIMARY KEY,
 	name varchar(255),
 	job varchar(255),
 	img varchar(2083),
@@ -12,9 +12,9 @@ CREATE TABLE famous (
 	association TEXT
 );
 
-CREATE TABLE config (
+CREATE TABLE IF NOT EXISTS config (
 	image_route varchar(2083)
-)
+);
 
-CREATE UNIQUE INDEX famous_index
+CREATE INDEX IF NOT EXISTS famous_index
 ON famous (id, name, job, img, birth_date, birth_place, about, before_fame, curiosities, family_life, association);
