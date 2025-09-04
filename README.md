@@ -100,6 +100,17 @@ https://stackoverflow.com/questions/42767733/inserting-date-into-postgresql-colu
 https://stackoverflow.com/questions/4231491/how-to-insert-null-values-into-postgresql-database-using-python
 https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres
 https://stackoverflow.com/questions/5342440/reset-auto-increment-counter-in-postgres
+
+
+# backend
+https://flask.palletsprojects.com/es/stable/quickstart/#a-minimal-application
+https://flask.palletsprojects.com/en/stable/patterns/javascript/
+https://stackoverflow.com/questions/49389535/problems-with-flask-and-bad-request
+https://www.geeksforgeeks.org/python/get-request-query-parameters-with-flask/
+ihttps://planetscale.com/blog/mysql-pagination
+https://stackoverflow.com/questions/51381312/row-to-json-and-psycopg2-fetchall-results-are-lists-within-a-list-instead-of-d
+https://www.w3schools.com/python/python_regex.asp
+https://blog.finxter.com/regex-match-dates/
 ```
 
 ## Add scheme.sql to postgres
