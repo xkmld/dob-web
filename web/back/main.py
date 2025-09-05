@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World!<br>This is the backend.</p>"
 
 connection = psycopg2.connect(database="dob_web", user="dob_user", password="dob_pass", host="localhost", port=5432)
 
@@ -57,7 +57,7 @@ def famous_date(date):
 @app.route("/api/v0/famous/today")
 def famous_today():
     print(datetime.date.today())
-    query = "SELECT * FROM famous WHERE birth_date='" + str(datetime.date.today()) + "'"
+    query = "SELECT * FROM famous WHERE DATE_PART('day', birth_date) = date_part('day', CURRENT_DATE) AND DATE_PART('month', birth_date) = date_part('month', CURRENT_DATE)"
     print(query)
     cursor.execute(query)
     famous = cursor.fetchall()
