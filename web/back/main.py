@@ -29,7 +29,7 @@ def show_routes():
 def famous_getAll():
     page = request.args.get('page')
     if page is None:
-        page = 0;
+        page = 1;
     query = "SELECT * FROM famous ORDER BY id LIMIT 10 offset " + str(((int(page) - 1) * 10))
     print(query)
     cursor.execute(query)
@@ -47,10 +47,12 @@ def famous_detail(id):
 @app.route("/api/v0/famous/date/<string:date>")
 def famous_date(date):
     pattern = "^\d{4}-\d{2}-\d{2}$"
-    if re.match(pattern, date):
-        return str(True)
-    else:
+    if not re.match(pattern, date):
         return jsonify("Invalid date format"), 400
+    query = "SELECT * FROM famous where birth_date='" + str(date) + "'"
+    cursor.execute(query)
+    famous = cursor.fetchall()
+    return jsonify(famous)
     
 @app.route("/api/v0/famous/today")
 def famous_today():
