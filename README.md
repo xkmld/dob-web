@@ -111,6 +111,10 @@ ihttps://planetscale.com/blog/mysql-pagination
 https://stackoverflow.com/questions/51381312/row-to-json-and-psycopg2-fetchall-results-are-lists-within-a-list-instead-of-d
 https://www.w3schools.com/python/python_regex.asp
 https://blog.finxter.com/regex-match-dates/
+
+# frontend
+https://fjolt.com/article/svelte-how-to-create-components
+
 ```
 
 ## Add scheme.sql to postgres
