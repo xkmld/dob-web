@@ -57,7 +57,7 @@ def famous_date(date):
     cursor.execute(query)
     famous = cursor.fetchall()
     return jsonify(famous)
-    
+
 @app.route("/api/v0/famous/today")
 def famous_today():
     print(datetime.date.today())
@@ -71,6 +71,14 @@ def famous_today():
 @app.route("/api/v0/famous/random")
 def famous_random():
     query = "SELECT * FROM famous ORDER BY RANDOM() LIMIT 1"
+    print(query)
+    cursor.execute(query)
+    famous = cursor.fetchall()
+    return jsonify(famous)
+
+@app.route("/api/v0/famous/20random")
+def famous_random():
+    query = "SELECT * FROM famous ORDER BY RANDOM() LIMIT 20"
     print(query)
     cursor.execute(query)
     famous = cursor.fetchall()
