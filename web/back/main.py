@@ -4,10 +4,14 @@ import psycopg2
 import re
 import datetime
 from psycopg2.extras import RealDictCursor
+from flask_cors import CORS, cross_origin
 
 # https://planetscale.com/blog/mysql-pagination
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
+#CORS(api, resources={r"/api/*": {"origins": "http://localhost:5173"}})
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!<br>This is the backend.</p>"
@@ -64,3 +68,10 @@ def famous_today():
     print(famous)
     return jsonify(famous)
 
+@app.route("/api/v0/famous/random")
+def famous_random():
+    query = "SELECT * FROM famous ORDER BY RANDOM() LIMIT 1"
+    print(query)
+    cursor.execute(query)
+    famous = cursor.fetchall()
+    return jsonify(famous)

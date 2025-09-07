@@ -4,7 +4,7 @@ body {
 }
 .center {
   margin: auto;
-  width: 90%;
+  width: 50%;
   border: 5px solid #E5BEB5;
   padding: 10px;
   background-color: #f5ffff;
@@ -18,34 +18,22 @@ h1 {
   height: 50%;
 }
 </style>
-<script lang="ts">
+<script>
 import Counter from "../../components/Counter.svelte";
 import Navbar from "../../components/Navbar.svelte";
-import { onMount } from 'svelte';
-
-let famous_data;
-
-onMount(async () => {
-  let block_saver : HTMLDivElement = document.getElementById("block-saver");
-  await fetch(`http://192.168.1.145:5000/api/v0/famous`)
-  .then(r => r.json())
-  .then(data => {
-    famous_data = data;
-  });
-  famous_data.forEach(function(value) {
-    block_saver.innerHTML += "<p>" + value.name + "</p>";
-  })
-})
-
 </script>
 <Navbar />
 <!-- <Counter />-->
 <body>
-  <h1>Famous</h1>
+  <br>
+  <br>
+  <h1>About Dob-Web</h1>
   <br>
   <br>
   <div class="center">
     <h2>HELLO!</h2>
-    <div id="block-saver"></div>
+    <p>This website is based on: <a href="https://es.famousbirthdays.com/about/">this other website</a></p>
+    <p>please dont demand me.</p>
+    <p>Github repo: <a href="https://github.com/xkmld/dob-web/">repo-link</a></p>
   </div>
 </body>
