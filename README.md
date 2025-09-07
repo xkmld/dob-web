@@ -114,7 +114,15 @@ https://blog.finxter.com/regex-match-dates/
 
 # frontend
 https://fjolt.com/article/svelte-how-to-create-components
-
+https://colorhunt.co/palette/5d688af7a5a5ffdbb6fff2ef
+https://www.w3schools.com/css/css_align.asp
+https://developer.mozilla.org/es/docs/Web/CSS/box-shadow
+https://www.w3schools.com/css/css_navbar_horizontal.asp
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_footer
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch
+https://www.tutorialspoint.com/typescript/typescript_array_foreach.htm
+https://blog.logrocket.com/consuming-rest-apis-in-svelte/
+https://stackoverflow.com/questions/580639/how-to-randomly-select-rows-in-sql
 ```
 
 ## Add scheme.sql to postgres
